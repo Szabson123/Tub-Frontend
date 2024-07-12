@@ -1,0 +1,42 @@
+.f-title {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .f-faq-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .f-faq-item {
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .f-faq-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .f-question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  }
+  
+  .f-answer {
+    font-size: 1em;
+    color: #555;
+    display: block;
+    text-align: center;
+  }
+  

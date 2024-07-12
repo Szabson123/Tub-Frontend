@@ -1,0 +1,155 @@
+<section>
+    <div class="wrap">
+      <div class="wrapper">
+        <div>
+          <p class="header-desc">Relaks i Rozrywka: Odkryj Balie i Sauny</p>
+          <p class="description">Rozpieszczaj się każdego dnia: Odkryj najlepsze sauny i balie, które wprowadzą luksusowy relaks do Twojego życia</p>
+          <ul class="buttons">
+            <li><a class="button-81" routerLink="/shop">Sklep</a></li>
+            <li><a href="#kontakt" class="button-81">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <br>
+    </div>
+  </section>
+  <section>
+    <div class="background">
+      <div class="conteinerbig">
+        <div class="wrapper2">
+          <div class="center">
+            <p class="title">O nas</p>
+            <p class="description2">
+              Specjalizujemy się w sprzedaży i wynajmie saun oraz bali ogrodowych, które stanowią doskonałe uzupełnienie każdego domu i ogrodu.
+            </p>
+            <p class="description2">
+              Nasza firma powstała z miłości do natury i pragnienia dostarczania wyjątkowych doświadczeń relaksacyjnych. Wierzymy, że sauna i balia ogrodowa to inwestycje w zdrowie i samopoczucie.
+            </p>
+            <p class="description2"> 
+              Dzięki naszym produktom możesz stworzyć swoje własne miejsce oazy w domowym zaciszu. Nasze produkty wykonane są z trwałych materiałów, doskonale komponujących się z otoczeniem.
+            </p>
+            <p class="description2">
+              Dążymy do tego, aby każdy produkt był synonimem jakości i estetyki.
+            </p>
+            <p class="description3">
+              Dołącz do naszej społeczności już dziś i rozpocznij podróż ku harmonii! Z nami przemienisz swój ogród lub taras w luksusowe spa. Nasz zespół specjalistów służy pomocą w doborze rozwiązań dopasowanych do Twoich potrzeb.
+            </p>
+            <p class="button-81" routerLink="about/">Więcej</p>
+            <hr class="line">
+          </div>
+          <!-- <div>
+            <img class="sauna" src="sauna.jpeg" alt="">
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="conteinerbig">
+      <div>
+        <p class="title">Nasze Produkty</p>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <img class="sauna-img" src="assets/images/sauna2.jpeg" alt="">
+          <p class="litle-title">Balia 1</p>
+          <p class="short-desc">Obecnie Balia w przygotowaniu <br><br><br><br><br><br><br><br></p>
+        </div>
+        <div class="card">
+          <img class="sauna-img" src="assets/images/Sauna3.jpeg" alt="">
+          <p class="litle-title">Balia 2</p>
+          <div class="short-desc"></div>
+          <p class="short-desc">Balia z drewna thermo wraz z wkładem z włókna szklanego</p>
+          <p class="short-desc">Nowoczesne ogrzewanie gazowe – czas ogrzewania wody od 30 minut do max.</p>
+          <p class="short-desc">2 godzin (w zależności od temperatury powietrza),</p>
+          <p class="short-desc">Hydromasaż, 15 dysz nierdzewnych,</p>
+          <p class="short-desc">Oświetlenie wewnętrzne,</p>
+          <p class="short-desc">Średnica zewnętrzna: 200cm,</p>
+          <p class="short-desc">Liczba osób: 6-8.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="kontakt">
+    <div class="container-big-big">
+      <div><p class="title">Formularz Kontaktowy</p></div>
+      <div class="conteinerbigcenter">
+        <div class="form-conteiner">
+          <div class="ctf-text">
+            <p class="form-title">Zapraszamy do Kontaktu</p>
+            <p class="description2">Czujcie się swobodnie, aby się z nami skontaktować! Jeśli macie jakiekolwiek pytania lub sugestie, prosimy o skorzystanie z formularza kontaktowego na naszej stronie internetowej. Jesteśmy chętni, aby odpowiedzieć na wszystkie Wasze zapytania i omówić potencjalne współprace. Z niecierpliwością czekamy na Waszą wiadomość!</p>
+            <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="ctf-form">
+              <div>
+                <label for="full-name">Imię i Nazwisko</label>
+                <input id="full-name" type="text" placeholder="Piotr Kowalski" formControlName="fullName" required>
+                <div *ngIf="questionForm.get('fullName')?.invalid && (questionForm.get('fullName')?.dirty || questionForm.get('fullName')?.touched)">
+                  <small *ngIf="questionForm.get('fullName')?.errors?.['required']">Imię i Nazwisko jest wymagane.</small>
+                </div>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="me@example.com" formControlName="email" required>
+                <div *ngIf="questionForm.get('email')?.invalid && (questionForm.get('email')?.dirty || questionForm.get('email')?.touched)">
+                  <small *ngIf="questionForm.get('email')?.errors?.['required']">Email jest wymagany.</small>
+                  <small *ngIf="questionForm.get('email')?.errors?.['email']">Nieprawidłowy format email.</small>
+                </div>
+              </div>
+              <div>
+                <label for="phone-number">Numer Telefonu</label>
+                <input id="phone-number" type="text" placeholder="999999999" formControlName="phoneNumber" required>
+                <div *ngIf="questionForm.get('phoneNumber')?.invalid && (questionForm.get('phoneNumber')?.dirty || questionForm.get('phoneNumber')?.touched)">
+                  <small *ngIf="questionForm.get('phoneNumber')?.errors?.['required']">Numer Telefonu jest wymagany.</small>
+                  <small *ngIf="questionForm.get('phoneNumber')?.errors?.['pattern']">Numer Telefonu musi składać się z 9 cyfr.</small>
+                </div>
+              </div>
+              <div>
+                <label for="desc">Opis</label>
+                <input id="desc" type="text" placeholder="tutaj pisz" formControlName="desc" required>
+                <div *ngIf="questionForm.get('desc')?.invalid && (questionForm.get('desc')?.dirty || questionForm.get('desc')?.touched)">
+                  <small *ngIf="questionForm.get('desc')?.errors?.['required']">Opis jest wymagany.</small>
+                </div>
+              </div>
+              <div>
+                <button type="submit" [disabled]="questionForm.invalid">Wyślij</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <hr class="thin-line">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>O nas</h2>
+      <p>Jesteśmy wiodącym dostawcą balii i saun, oferującym najwyższej jakości produkty oraz usługi dla naszych klientów. Naszym celem jest zapewnienie relaksu i komfortu w każdej chwili spędzonej w naszych produktach.</p>
+    </div>
+    <div class="footer-section links">
+      <h2>Linki</h2>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="#">O nas</a></li>
+        <li><a href="#">Produkty</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+    </div>
+    <div class="footer-section contact">
+      <h2>Kontakt</h2>
+      <ul>
+        <li>Email: infobaliasauny.pl</li>
+        <li>Telefon: +48 123 456 789</li>
+        <li>Adres: Ulica Przykładowa 123, 00-123 Miasto</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Balii i Sauny | Wszystkie prawa zastrzeżone
+  </div>
+</footer>

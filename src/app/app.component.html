@@ -1,0 +1,18 @@
+<header>
+  <nav>
+    <ul class="navbar">
+      <li><a routerLink="/" (click)="scrollToTop()"><img class="logo" src="assets/images/123.png" alt="Background"></a></li>
+      <li><a routerLink="/about" (click)="scrollToTop()">O nas</a></li>
+      <li><a routerLink="/shop" (click)="scrollToTop()">Sklep</a></li>
+      <li><a routerLink="/faq" (click)="scrollToTop()">FAQ</a></li>
+      <li *ngIf="isAdmin"><a routerLink="/add-tub" (click)="scrollToTop()">Dodaj Balie</a></li>
+      <li *ngIf="isAdmin"><a routerLink="/reservations-to-accept" (click)="scrollToTop()">Rezerwacje</a></li>
+      <li *ngIf="isAdmin"><a routerLink="/faq/manage" (click)="scrollToTop()">Zarządzaj FAQ</a></li>
+      <li *ngIf="!isLoggedIn"><a id="Login" routerLink="/login" (click)="scrollToTop()">Zaloguj się</a></li>
+      <li *ngIf="!isLoggedIn"><a id="Register" routerLink="/register" (click)="scrollToTop()">Zarejestruj się</a></li>
+      <li *ngIf="isLoggedIn"><a id="Logout" (click)="logout()">Wyloguj się</a></li>
+      <li *ngIf="isLoggedIn"><a routerLink="/profile" (click)="scrollToTop()">Profil</a></li>
+    </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>

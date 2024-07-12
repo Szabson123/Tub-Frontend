@@ -1,0 +1,19 @@
+<br>
+<br>
+<br>
+<div class="product-detail">
+  <p class="title-shop">Rezerwacja Online: {{ tub.name }}</p>
+  <div class="container mt-3">
+    <div *ngIf="tub">
+      <p class="description2-shop">Cena za dzień: <span class="weight">{{ tub.price_per_day }}zł</span></p>
+    </div>
+    <div class="calendar-container">
+      <full-calendar #calendar [options]="calendarOptions"></full-calendar>
+      <div *ngIf="selectedDates.length === 2" class="button-container">
+        <span class="description2-shop-sum">Suma: {{ totalPrice }}zł</span>
+        <button class="button-81-shop" (click)="goToReservationForm()">Dalej</button>
+      </div>
+    </div>
+  </div>
+</div>
+  

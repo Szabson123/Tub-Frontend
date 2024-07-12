@@ -1,0 +1,30 @@
+<br>
+<br>
+<br>
+<br>
+
+<form [formGroup]="tubForm" (ngSubmit)="onSubmit()" class="form-container-add-form">
+ <div class="form-group-add-form">
+    <label for="name">Nazwa:</label>
+    <input id="name" formControlName="name" type="text" class="form-control-add-form">
+    <div *ngIf="tubForm.get('name')?.touched && tubForm.get('name')?.invalid" class="error-message">Imię i Nazwisko jest wymagane</div>
+  </div>
+  <div class="form-group-add-form">
+    <label for="description">Opis:</label>
+    <textarea id="description" formControlName="description" class="form-control-add-form"></textarea>
+    <div *ngIf="tubForm.get('description')?.touched && tubForm.get('description')?.invalid" class="error-message">Opis jest wymagany</div>
+  </div>
+  <div class="form-group-add-form">
+    <label for="price_per_day">Cena za dzień:</label>
+    <input id="price_per_day" formControlName="price_per_day" type="number" class="form-control-add-form">
+    <div *ngIf="tubForm.get('price_per_day')?.touched && tubForm.get('price_per_day')?.invalid" class="error-message">Cena za dzień jest wymagana i musi być większa lub równa 0</div>
+  </div>
+  <div class="form-group-add-form">
+    <label for="logo_img">Zdjęcie loga bali (które bedzie na stronie):</label>
+    <input id="logo_img" type="file" (change)="onFileChange($event)" class="form-control-file-add-form">
+    <div *ngIf="tubForm.get('logo_img')?.touched && tubForm.get('logo_img')?.invalid" class="error-message">Logo jest wymagane</div>
+  </div>
+  <button type="submit" class="btn-add-form">Add Tub</button>
+</form>
+
+

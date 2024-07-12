@@ -1,0 +1,51 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="p-profile-container">
+    <h1 class="p-title">Profil</h1>
+  
+    <div *ngIf="errorMessage" class="p-error-message">{{ errorMessage }}</div>
+    <div *ngIf="successMessage" class="p-success-message">{{ successMessage }}</div>
+  
+    <form (ngSubmit)="updateUserProfile()" class="p-form">
+      <label for="username" class="p-label">Nazwa użytkownika</label>
+      <input id="username" [(ngModel)]="userProfile.username" name="username" required class="p-input" />
+  
+      <label for="email" class="p-label">Email</label>
+      <input id="email" [(ngModel)]="userProfile.email" name="email" required type="email" class="p-input" />
+  
+      <label for="first_name" class="p-label">Imię</label>
+      <input id="first_name" [(ngModel)]="userProfile.first_name" name="first_name" required class="p-input" />
+  
+      <label for="last_name" class="p-label">Nazwisko</label>
+      <input id="last_name" [(ngModel)]="userProfile.last_name" name="last_name" required class="p-input" />
+  
+      <label for="phone_number" class="p-label">Numer telefonu</label>
+      <input id="phone_number" [(ngModel)]="userProfile.phone_number" name="phone_number" required class="p-input" />
+  
+      <button type="submit" class="p-button">Zaktualizuj</button>
+    </form>
+  
+    <h2 class="p-subtitle">Historia rezerwacji</h2>
+    <ul class="p-reservation-list">
+      <li *ngFor="let reservation of userReservations" class="p-reservation-item">
+        <p class="p-reservation-detail">Balia: {{ reservation.tub_name }}</p>
+        <p class="p-reservation-detail">Cena: {{ reservation.price }}</p>
+        <p class="p-reservation-detail">Data początkowa: {{ reservation.start_date }}</p>
+        <p class="p-reservation-detail">Data końcowa: {{ reservation.end_date }}</p>
+        <p class="p-reservation-detail">Cena ogólna: {{ reservation.total_price }}</p>
+        <p class="p-reservation-detail">Status: 
+          <span *ngIf="reservation.wait_status" class="p-status-waiting">Oczekująca</span>
+          <span *ngIf="reservation.accepted_status" class="p-status-accepted">Zaakceptowana</span>
+        </p>
+      </li>
+    </ul>
+</div>

@@ -1,0 +1,168 @@
+.pending-reservations-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .reservation-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reservation-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-detail {
+    margin-bottom: 5px;
+  }
+  
+  .reservation-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .reservation-actions button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reservation-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (min-width: 600px) {
+    .reservation-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .reservation-info {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .reservation-detail {
+      flex: 1 1 45%;
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .pending-reservations-container {
+      max-width: 1200px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-81-shop {
+    margin-left: auto;
+    margin-right: 10px;
+    display: block;
+    background-color: #43b852;
+    border: 0 solid #000000;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-81-shop:hover {
+    background-color: #1e293b;
+    color: #fff;
+  }
+  
+
+.description2-shop{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    font-size: 25px;
+    text-align: center;
+    color: #474a51;
+}
+
+.button-81-shop-red {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #d3352f;
+    border: 0 solid #000000;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-81-shop-red:hover {
+    background-color: #1e293b;
+    color: #fff;
+  }
+  
+
+.description2-shop-sum{
+    margin-right: 2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    text-align: center;
+    color: #474a51;
+}

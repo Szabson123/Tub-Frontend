@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="f-a-container">
+  <h1 class="f-a-title">Manage FAQs</h1>
+  <ul class="f-a-faq-list">
+    <li *ngFor="let faq of faqs" class="f-a-faq-item">
+      <p class="f-a-question">{{ faq.question }}</p>
+      <input [(ngModel)]="faq.answer" placeholder="Answer" class="f-a-input">
+      <div class="f-a-buttons">
+        <button (click)="updateFaq(faq)" class="f-a-button">Update</button>
+        <button (click)="togglePublishStatus(faq)" class="f-a-button">
+          {{ faq.is_published ? 'Unpublish' : 'Publish' }}
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>

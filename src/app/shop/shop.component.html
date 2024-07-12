@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div *ngFor="let tub of tubs">
+    <br>
+    <br>
+    <br>
+    <div class="container-shop">
+        <div class="image-shop">
+            <img [src]="tub.logo_img" alt="{{ tub.name }}">
+        </div>
+        <div class="content">
+            <p class="litle-title">{{ tub.name }}</p>
+            <p class="description2">{{ tub.description }}</p>
+            <p class="description2-shop">Cena już od {{tub.price_per_day}} za dzień!</p>
+            <p class="button-81-shop" [routerLink]="['/shop', tub.id]">Zarezerwuj</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+.p-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .p-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+  }
+  
+  .p-error-message, .p-success-message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .p-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .p-success-message {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .p-form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .p-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .p-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .p-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .p-subtitle {
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+  }
+  
+  .p-reservation-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .p-reservation-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .p-reservation-detail {
+    margin: 5px 0;
+  }
+  
+  .p-reservation-detail span {
+    font-weight: bold;
+  }
+  
+  .p-status-waiting {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .p-status-accepted {
+    color: green;
+    font-weight: bold;
+  }

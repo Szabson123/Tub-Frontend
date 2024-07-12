@@ -1,0 +1,499 @@
+body{
+    margin: 0;
+    background-color: #e8ece8;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+html{
+    margin: 0;
+}
+nav{
+  padding-top: 5em;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+.logo{
+    height: 70px;
+    width: auto;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 10em;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 3.5rem;
+}
+.navbar li a{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    font-style: normal;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.conteiner{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.header-desc{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 4em;
+    display: flex;
+    color: white;
+    box-shadow: black;
+    padding-top: 4em;
+}
+.wrap{
+    background-image: url(assets/images/ludziewbali.jpg);
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.picture{
+    height: 300px;
+    width: auto;
+}
+.left-pic{
+    display: flex;
+    justify-content: center;
+}
+.header-color{
+    background-color: #D9EDDA;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.description{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    font-size: 30px;
+    color: white;
+    font-style: italic
+}
+.buttons {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+  }
+
+.shop-button {
+    background-color: #3bdf7f;
+    padding: 0.8rem 1.4rem;
+    border-radius: 9px;
+    color: white;
+}
+.conntact-button{
+    background-color: #3bdf7f;
+    padding: 0.8rem 1.4rem;
+    border-radius: 9px;
+    color: white;
+}
+.buttons li {
+    margin-right: 10px; 
+}
+
+/* CSS */
+.button-81 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+.icon{
+    width: 25px;
+    height: auto;
+}
+#Login{
+    padding-left: 5em;
+}
+.title{
+    font-size: 3em;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    text-align: center;
+}
+.description2{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    font-size: 20px;
+    text-align: center;
+    color: #474a51;
+}
+/* .wrapper2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12em;
+    justify-content: center;
+    align-items: center;
+} */
+.sauna{
+    width: 600px;
+    height: auto;
+    border-radius: 10%;
+}
+.conteinerbig{
+    margin-top: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5em;
+    justify-content: center;
+}
+.grey-text{
+    font-size: 2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+.button-6 {
+  align-items: center;
+  background-color: #2ee908;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.center{
+  text-align: center;
+  border-radius: 5%;
+  padding: 1em;
+}
+.line{
+  margin-top: 5em;
+}
+.description3{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 550;
+  font-size: 20px;
+  text-align: center;
+  color: #474a51;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+}
+.sauna-img{
+  width: 600px;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  display: block;
+  margin: 0 auto;
+}
+.card{
+  background-color: white;
+  border-radius: 7%;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+.short-desc{
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+  font-size: 20px;
+  text-align: center;
+  color: #474a51;
+}
+.litle-title{
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  text-align: center;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.little-picture{
+  width: 75px;
+  height: auto;
+  border-radius: 100%;
+}
+.guy-desc{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+  font-size: 20px;
+  color: #474a51;
+}
+.name-sc-name{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+  font-size: 20px;
+  color: #6b6b6b;
+}
+.darker-background{
+  background-color: #c3e4c4;
+  padding-bottom: 5%;
+}
+.title2{
+  font-size: 3em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.galery{
+  width: 250px;
+  height: auto;
+
+}
+.conteiner-small{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.ctf-text {
+  display: flex;
+  flex-direction: column;
+}
+.ctf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ctf-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctf-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.ctf-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ctf-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #43b852;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.ctf-form button:hover {
+  background-color: #5aeb6d;
+}
+
+.formpicture {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.form-conteiner{
+  align-items: start;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.form-title{
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  text-align: center;
+  color: #43b852;
+}
+.conteinerbigcenter{
+  display: flex;
+  margin-top: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5em;
+  justify-content: center;
+}
+/* FOOTER */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  color: #43b852;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  font-family: "Josefin Sans", sans-serif;
+  color: #474a51;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #474a51;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #43b852;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+}
+.thin-line{
+  border: none;
+  border-top: 1px solid #bbb;
+}
+.center-card{
+  display: flex;
+  justify-content: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
