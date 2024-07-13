@@ -8,7 +8,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private baseUrl = 'http://tub-backend-production.up.railway.app';
+  private baseUrl = 'https://tub-backend-production.up.railway.app';
   private currentUserSubject: BehaviorSubject<any>;
   public currentUser: Observable<any>;
   private isManagerSubject: BehaviorSubject<boolean>;

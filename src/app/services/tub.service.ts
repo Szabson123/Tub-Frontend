@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TubService {
-  private apiUrl = 'http://tub-backend-production.up.railway.app/api/';  
+  private apiUrl = 'https://tub-backend-production.up.railway.app/api/';  
 
   constructor(private http: HttpClient) { }
 
