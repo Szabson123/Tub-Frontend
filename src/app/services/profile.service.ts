@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProfileService {
-  private apiUrl = 'http://127.0.0.1:8000/api';  // Adjust as necessary
+  private apiUrl = 'http://tub-backend-production.up.railway.app/api';  // Adjust as necessary
 
   constructor(private http: HttpClient) { }
 

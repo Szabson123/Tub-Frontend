@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FaqService {
-  private apiUrl = 'http://localhost:8000/api/faq';
+  private apiUrl = 'http://tub-backend-production.up.railway.app/api/faq';
 
   constructor(private http: HttpClient) { }
 
