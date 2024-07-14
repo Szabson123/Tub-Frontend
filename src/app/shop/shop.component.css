@@ -78,7 +78,8 @@
     color: #474a51;
 }
 .loader {
-  width: 50px;
+  margin: 0 auto;
+  width: 30px;
   padding: 8px;
   aspect-ratio: 1;
   border-radius: 50%;
