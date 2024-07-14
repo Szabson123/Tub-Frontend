@@ -81,8 +81,8 @@ export class ReservationFormComponent implements OnInit {
 
       this.reservationService.createReservation(this.tubId, formData).subscribe(
         response => {
-          this.router.navigate(['/shop']);
           this._ToastService.showSuccess('Rezerwacja została dokonana');
+          this.router.navigate(['/shop']);
         },
         error => {
           console.error('Error creating reservation', error);
