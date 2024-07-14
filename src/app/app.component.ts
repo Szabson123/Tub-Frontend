@@ -39,4 +39,20 @@ export class AppComponent implements OnInit {
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      navbar.classList.toggle('open');
+      const hamburger = document.querySelector('.hamburger') as HTMLElement;
+      const closeMenu = document.querySelector('.close-menu') as HTMLElement;
+      if (navbar.classList.contains('open')) {
+        hamburger.style.display = 'none';
+        closeMenu.style.display = 'block';
+      } else {
+        hamburger.style.display = 'block';
+        closeMenu.style.display = 'none';
+      }
+    }
+  }
 }

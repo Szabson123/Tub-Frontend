@@ -499,3 +499,66 @@ footer {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%; /* Pełna szerokość na urządzeniach mobilnych */
+  }
+
+  .sauna-img {
+    max-width: 100%; /* Pełna szerokość obrazka na urządzeniach mobilnych */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-container {
+    padding: 1em 0.5em;
+  }
+
+  .navbar li a {
+    font-size: small;
+  }
+
+  .logo {
+    height: 50px;
+    width: 80px;
+  }
+
+  .card {
+    padding: 8px; /* Dalsze zmniejszenie paddingu na najmniejszych ekranach */
+  }
+
+  .litle-title {
+    font-size: 1em; /* Dalsze zmniejszenie rozmiaru czcionki */
+  }
+
+  .short-desc {
+    font-size: 0.8em; /* Dalsze zmniejszenie rozmiaru czcionki */
+  }
+
+  .sauna-img {
+    max-width: 100%; /* Pełna szerokość obrazka na najmniejszych ekranach */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-desc {
+    font-size: 2em; /* Mniejszy rozmiar czcionki dla nagłówka na mniejszych ekranach */
+  }
+
+  .description {
+    font-size: 1em; /* Mniejszy rozmiar czcionki dla opisu na mniejszych ekranach */
+  }
+
+  .buttons {
+    flex-direction: column; /* Zmiana układu przycisków na kolumnę */
+    gap: 10px; /* Mniejszy odstęp między przyciskami */
+  }
+}
