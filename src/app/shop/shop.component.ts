@@ -14,12 +14,14 @@ import { RouterModule } from '@angular/router';
 })
 export class ShopComponent implements OnInit {
   tubs: any[] = [];
+  loading: boolean = true;
 
   constructor (private tubService: TubService) {}
 
   ngOnInit(): void {
     this.tubService.getTubs().subscribe(data => {
       this.tubs = data;
+      this.loading = false;
     })
   }
 }

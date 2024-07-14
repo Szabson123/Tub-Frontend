@@ -1,33 +1,41 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <div class="form-container-add-form">
   <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
     <div class="title-add-form">Rezerwacja Balii</div>
     <div class="form-group-add-form">
-      <label>Start Date</label>
+      <label>Data początkowa</label>
       <span>{{ startDate }}</span>
     </div>
     <div class="form-group-add-form">
-      <label>End Date</label>
+      <label>Data końcowa</label>
       <span>{{ endDate }}</span>
     </div>
     <div class="form-group-add-form">
-      <label>Total Price</label>
+      <label>Cena</label>
       <span>{{ totalPrice }}</span>
     </div>
     <div class="form-group-add-form">
-      <label for="city">City</label>
+      <label for="city">Miasto</label>
       <input id="city" formControlName="city" type="text" class="form-control-add-form">
-      <div *ngIf="reservationForm.get('city')?.touched && reservationForm.get('city')?.invalid" class="error-message">City is required</div>
+      <div *ngIf="reservationForm.get('city')?.touched && reservationForm.get('city')?.invalid" class="error-message">Miasto jest wymagane</div>
     </div>
     <div class="form-group-add-form">
-      <label for="street">Street</label>
+      <label for="street">Ulica</label>
       <input id="street" formControlName="street" type="text" class="form-control-add-form">
-      <div *ngIf="reservationForm.get('street')?.touched && reservationForm.get('street')?.invalid" class="error-message">Street is required</div>
+      <div *ngIf="reservationForm.get('street')?.touched && reservationForm.get('street')?.invalid" class="error-message">Ulica jest wymagana</div>
     </div>
     <div class="form-group-add-form">
-      <label for="home_number">Home Number</label>
+      <label for="home_number">Numer Domu</label>
       <input id="home_number" formControlName="home_number" type="text" class="form-control-add-form">
-      <div *ngIf="reservationForm.get('home_number')?.touched && reservationForm.get('home_number')?.invalid" class="error-message">Home number is required</div>
+      <div *ngIf="reservationForm.get('home_number')?.touched && reservationForm.get('home_number')?.invalid" class="error-message">Numer domu jest wymagany</div>
     </div>
-    <button type="submit" class="btn-add-form" [disabled]="reservationForm.invalid">Create Reservation</button>
+    <button type="submit" class="btn-add-form" [disabled]="reservationForm.invalid">Zarezerwuj</button>
   </form>
 </div>
