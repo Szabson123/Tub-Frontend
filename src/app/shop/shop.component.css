@@ -94,3 +94,9 @@
   animation: l3 1s infinite linear;
 }
 @keyframes l3 {to{transform: rotate(1turn)}}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

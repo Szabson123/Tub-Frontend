@@ -5,9 +5,9 @@
 <br>
 <br>
 
-
-<div *ngIf="loading" class="loader"></div>
-
+<div class="wrapper">
+    <div *ngIf="loading" class="loader"></div>
+</div>
 <div *ngIf="!loading">
     <div *ngFor="let tub of tubs">
         <br>
