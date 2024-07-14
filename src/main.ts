@@ -5,9 +5,13 @@ import { provideRouter } from '@angular/router';
 import { AuthInterceptor } from './app/auth/auth.interceptor';
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr } from 'ngx-toastr';
 
 bootstrapApplication(AppComponent, {
   providers: [
+    provideAnimations(), 
+    provideToastr(), 
     importProvidersFrom(HttpClientModule),
     provideRouter(routes),
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReservationService } from '../services/reservation.service';
 import { TubService } from '../services/tub.service';
+import { ToastService } from '../services/toast.service';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class ReservationFormComponent implements OnInit {
   tub: any = {};
 
   constructor(
+    private readonly _ToastService: ToastService,
     private fb: FormBuilder,
     private reservationService: ReservationService,
     private tubService: TubService,
@@ -80,6 +82,7 @@ export class ReservationFormComponent implements OnInit {
       this.reservationService.createReservation(this.tubId, formData).subscribe(
         response => {
           this.router.navigate(['/shop']);
+          this._ToastService.showSuccess('Rezerwacja została dokonana');
         },
         error => {
           console.error('Error creating reservation', error);
