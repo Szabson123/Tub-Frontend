@@ -24,7 +24,7 @@
           <div class="center">
             <p class="title">O nas</p>
             <p class="description2">
-              Specjalizujemy się w sprzedaży i wynajmie saun oraz bali ogrodowych, które stanowią doskonałe uzupełnienie każdego domu i ogrodu.
+              Specjalizujemy się w wynajmie saun oraz bali ogrodowych, które stanowią doskonałe uzupełnienie każdego domu i ogrodu.
             </p>
             <p class="description2">
               Nasza firma powstała z miłości do natury i pragnienia dostarczania wyjątkowych doświadczeń relaksacyjnych. Wierzymy, że sauna i balia ogrodowa to inwestycje w zdrowie i samopoczucie.
@@ -78,12 +78,11 @@
   </section>
   <section id="kontakt">
     <div class="container-big-big">
-      <div><p class="title">Formularz Kontaktowy</p></div>
       <div class="conteinerbigcenter">
         <div class="form-conteiner">
           <div class="ctf-text">
-            <p class="form-title">Zapraszamy do Kontaktu</p>
-            <p class="description2">Czujcie się swobodnie, aby się z nami skontaktować! Jeśli macie jakiekolwiek pytania lub sugestie, prosimy o skorzystanie z formularza kontaktowego na naszej stronie internetowej. Jesteśmy chętni, aby odpowiedzieć na wszystkie Wasze zapytania i omówić potencjalne współprace. Z niecierpliwością czekamy na Waszą wiadomość!</p>
+            <p class="form-title">Zadaj nam pytanie!</p>
+            <p class="description2">Masz pytania? Chętnie na nie odpowiemy! Skorzystaj z formularza na naszej stronie internetowej, aby je zadać. Twoje zapytania pomogą nam ulepszyć sekcję FAQ, odpowiadając na najczęściej pojawiające się kwestie. Czekamy na Twoje pytania!</p>
             <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="ctf-form">
               <div>
                 <label for="full-name">Imię i Nazwisko</label>
@@ -134,18 +133,28 @@
     <div class="footer-section links">
       <h2>Linki</h2>
       <ul>
-        <li><a href="#">Strona główna</a></li>
-        <li><a href="#">O nas</a></li>
-        <li><a href="#">Produkty</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="/">Strona główna</a></li>
+        <li><a href="/about">O nas</a></li>
+        <li><a href="/shop">Produkty</a></li>
     </ul>
     </div>
     <div class="footer-section contact">
       <h2>Kontakt</h2>
       <ul>
-        <li>Email: infobaliasauny.pl</li>
-        <li>Telefon: +48 123 456 789</li>
-        <li>Adres: Ulica Przykładowa 123, 00-123 Miasto</li>
+        <li>
+          Email: 
+          <a href="mailto:balieisauny@gmail.com">balieisauny@gmail.com</a>
+        </li>
+        <li>
+          Telefon: 
+          <a href="tel:+48694330886">694330886</a>
+        </li>
+        <li>
+          Adres: 
+          <a href="https://www.google.com/maps/search/?api=1&query=Dąbrowa+Górnicza+ul.+Hallerczyków+118" target="_blank">
+            Dąbrowa Górnicza ul. Hallerczyków 118
+          </a>
+        </li>
       </ul>
     </div>
   </div>
