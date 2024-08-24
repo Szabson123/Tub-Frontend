@@ -7,7 +7,10 @@
     margin-right: 15%;
     border: 0;
   }
-
+  .litle-title{
+    font-size: 30px;
+    text-align: center;
+  }
   .grid-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -58,7 +61,10 @@
     margin-bottom: 5px;
     margin-top: 10px;
   }
-
+  .titlee{
+    text-align: center;
+    font-size: 30px;
+  }
   /* Media Queries for Responsiveness */
   @media (max-width: 1200px) {
     .container-about {

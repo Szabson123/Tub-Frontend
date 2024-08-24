@@ -2,11 +2,11 @@
     <div class="wrap">
       <div class="wrapper">
         <div>
-          <p class="header-desc">Relaks i Rozrywka: Odkryj Balie i Sauny</p>
+          <h1 class="header-desc">Relaks i Rozrywka: Odkryj Balie i Sauny</h1>
           <p class="description">Rozpieszczaj się każdego dnia: Odkryj najlepsze sauny i balie, które wprowadzą luksusowy relaks do Twojego życia</p>
           <ul class="buttons">
-            <li><a class="button-81" routerLink="/shop">Sklep</a></li>
-            <li><a href="#kontakt" class="button-81">Kontakt</a></li>
+            <li><a class="button-80" routerLink="/shop">Sklep</a></li>
+            <li><a href="#kontakt" class="button-80">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <div class="conteinerbig">
         <div class="wrapper2">
           <div class="center">
-            <p class="title">O nas</p>
+            <h2 class="title">O nas</h2>
             <p class="description2">
               Specjalizujemy się w wynajmie saun oraz bali ogrodowych, które stanowią doskonałe uzupełnienie każdego domu i ogrodu.
             </p>
@@ -51,30 +51,58 @@
   </section>
   
   <section>
-    <div class="conteinerbig">
-      <div>
-        <p class="title">Nasze Produkty</p>
+    <h2 class="title">Proces rezerwacji:</h2>
+    <div class="step-container">
+      <div class="step-box">
+        <div class="step">
+          <div class="step-text"><h3>1. Rezerwacja Online</h3></div>
+          <div class="step-icon"><img class="firststepimg" src="assets/main-page-imgs/calendar-checkmark-icon.png"/> </div>
+        </div>
+        <div class="step step2">
+          <div class="step-text"><h3>Potwierdzenie Rezerwacji w Mgnieniu Oka</h3></div>
+          <div class="step-icon"><img src="assets/main-page-imgs/boy-icon.png"/></div>
+        </div>
       </div>
-      <div class="grid2">
-        <div class="card">
-          <img class="sauna-img" src="assets/images/sauna2.jpeg" alt="">
-          <p class="litle-title">Balia 1</p>
-          <p class="short-desc">Obecnie Balia w przygotowaniu <br><br><br><br><br><br><br><br></p>
+      <div class="step-box">
+        <div class="step">
+          <div class="step-text"><h3>3. Bezproblemowa Dostawa na Twoje Życzenie</h3></div>
+          <div class="step-icon"><h3><img src="assets/main-page-imgs/tutu.png"/></h3></div>
         </div>
-        <div class="card">
-          <img class="sauna-img" src="assets/images/Sauna3.jpeg" alt="">
-          <p class="litle-title">Balia 2</p>
-          <div class="short-desc"></div>
-          <p class="short-desc">Balia z drewna thermo wraz z wkładem z włókna szklanego</p>
-          <p class="short-desc">Nowoczesne ogrzewanie gazowe – czas ogrzewania wody od 30 minut do max.</p>
-          <p class="short-desc">2 godzin (w zależności od temperatury powietrza),</p>
-          <p class="short-desc">Hydromasaż, 15 dysz nierdzewnych,</p>
-          <p class="short-desc">Oświetlenie wewnętrzne,</p>
-          <p class="short-desc">Średnica zewnętrzna: 200cm,</p>
-          <p class="short-desc">Liczba osób: 6-8.</p>
+        <div class="step arrow-step">
+            <div class="step-text">4. Ciesz się Pełnym Relaksem</div>
         </div>
+      </div>
+  </div>
+  
+  <div class="products">
+    <h2 class="products-title">Poznaj Nasze Produkty</h2>
+    <div class="card">
+      <div class="sauna">
+        <img class="sauna-img hidden2 sauna1" src="assets/images/Sauna3.jpeg"/>
+      </div>
+      <div class="card-text hidden2 sauna2">
+        <h3>Balia z drewna thermo wraz z wkładem z włókna szklanego:</h3>
+        <ul>
+          <li>Nowoczesne ogrzewanie gazowe – czas ogrzewania wody od 30 minut do max. 2 godzin</li>
+          <li>Hydromasaż, 15 dysz nierdzewnych</li>
+          <li>Oświetlenie wewnętrzne</li>
+          <li>Średnica zewnętrzna: 200cm</li>
+          <li>Liczba osób: 6-8</li>
+        </ul>
       </div>
     </div>
+    <div class="card">
+      <div class="sauna">
+        <img class="sauna-img hidden2 sauna1" src="assets/images/sauna2.jpeg"/>
+      </div>
+      <div class="card-text hidden2 sauna2">
+        <h3>Balia niedostępna - W przygotowywaniu</h3>
+        <p>
+          Jako młoda, dynamicznie rozwijająca się firma, stale poszerzamy naszą ofertę, aby móc zaoferować jeszcze więcej wyjątkowych balii. Naszym celem jest zaspokojenie potrzeb rosnącej liczby klientów, dzięki czemu coraz więcej osób będzie mogło cieszyć się naszymi produktami.
+        </p>
+      </div>
+    </div>
+  </div>
   </section>
   <section id="kontakt">
     <div class="container-big-big">
@@ -96,20 +124,18 @@
                 <input id="email" type="email" placeholder="me@example.com" formControlName="email" required>
                 <div *ngIf="questionForm.get('email')?.invalid && (questionForm.get('email')?.dirty || questionForm.get('email')?.touched)">
                   <small *ngIf="questionForm.get('email')?.errors?.['required']">Email jest wymagany.</small>
-                  <small *ngIf="questionForm.get('email')?.errors?.['email']">Nieprawidłowy format email.</small>
                 </div>
               </div>
               <div>
                 <label for="phone-number">Numer Telefonu</label>
-                <input id="phone-number" type="text" placeholder="999999999" formControlName="phoneNumber" required>
+                <input id="phone-number" type="text" placeholder="123456789" formControlName="phoneNumber" required minlength="9">
                 <div *ngIf="questionForm.get('phoneNumber')?.invalid && (questionForm.get('phoneNumber')?.dirty || questionForm.get('phoneNumber')?.touched)">
                   <small *ngIf="questionForm.get('phoneNumber')?.errors?.['required']">Numer Telefonu jest wymagany.</small>
-                  <small *ngIf="questionForm.get('phoneNumber')?.errors?.['pattern']">Numer Telefonu musi składać się z 9 cyfr.</small>
                 </div>
               </div>
               <div>
                 <label for="desc">Opis</label>
-                <input id="desc" type="text" placeholder="tutaj pisz" formControlName="desc" required>
+                <input id="desc" type="text" placeholder="Twój opis" formControlName="desc" required>
                 <div *ngIf="questionForm.get('desc')?.invalid && (questionForm.get('desc')?.dirty || questionForm.get('desc')?.touched)">
                   <small *ngIf="questionForm.get('desc')?.errors?.['required']">Opis jest wymagany.</small>
                 </div>
