@@ -1,14 +1,14 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FaqService } from '../services/faq.service';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
