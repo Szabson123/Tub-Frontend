@@ -12,6 +12,7 @@
     transform: translate(0);
   }
 }
+/* animcaja keyframes */
 @keyframes fromCenter {
   to{
     transform: translate(0);
@@ -32,7 +33,7 @@
     z-index: -1;
   }
 }
-
+/*koniec*/
 body{
     margin: 0;
     background-color: #e8ece8;
@@ -93,7 +94,6 @@ nav{
     transform: translateX(-100%);
     animation: slideToRight 1s forwards;
 }
-
 .wrap{
     background-image: url(assets/images/Kutas1.png);
     padding-left: 5%;
@@ -162,14 +162,13 @@ nav{
 
 /* CSS */
 .button-80{
-  display: block;
   background-color: #fff;
   border: 0 solid #e2e8f0;
   border-radius: 1.5rem;
   box-sizing: border-box;
   color: #0d172a;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 24px;
   font-weight: 600;
@@ -361,6 +360,7 @@ nav{
     font-weight: 400;
     color: grey;
 }
+/*animacja klasy*/
 .show2.sauna1{
   animation: fromCenter 1.5s forwards;
   animation-delay: 0.5s;
@@ -369,6 +369,7 @@ nav{
   animation: fromCenter2 1.5s forwards;
   animation-delay: 0.5s;
 }
+/*koniec*/
 .button-6 {
   align-items: center;
   background-color: #2ee908;
@@ -634,14 +635,7 @@ small {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-@media (max-width: 1550px) {
-  .button-80{
-    font-size: 16px;
-  }
-  .button-80 img{
-    width: 16px;
-  }
-}
+
 @media (max-width: 1520px) {
   .card h3{
     font-size: 25px;
@@ -651,12 +645,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 @media (max-width: 1450px) {
-  .button-80{
-    font-size: 18px;
-  }
-  .button-80 img{
-    display: none;
-  }
+
 }
 @media (max-width: 1420px) {
   .header-desc{
@@ -736,6 +725,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-bottom-left-radius: 0;
     transform: translate(0);
   }
+  /*animacja - zmiana na inna*/
   .show2.sauna1{
     animation: none;
   }
@@ -743,6 +733,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     animation: fromCenter3 1.5s forwards;
     animation-delay: 0.5s;
   }
+  /*koniec*/
   .sauna{
     height: 368.44px;
   }
@@ -793,7 +784,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    font-size: 30px;
   }
   .wrap{
-    padding-bottom: 30em;
+    padding-bottom: 16em;
     padding-left: 15%;
     padding-right: 15%;
     background-position: center;
@@ -801,7 +792,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   .buttons {
     padding: 0;
-    gap: 10px; /* Mniejszy odstęp między przyciskami */
+  }
+  .buttons li{
+    margin: 0;
   }
   .footer-container {
     flex-direction: column;
@@ -838,6 +831,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .card-text{
     transform: translate(0, -90%);
   }
+  .wrap{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 10em;
+  }
+  .header-desc{
+    margin-top: 0;
+  }
 }
 @media (max-width: 430px){
   .step-icon{
@@ -867,11 +868,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .sauna{
     height: 206.33px;
   }
+  .buttons{
+    display: block;
+  }
+  .button-80{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 @media(max-width: 350px){
   .wrap{
     padding-left: 2%;
     padding-right: 2%;
+  }
+  .header-desc{
+    margin-bottom: 80px;
+    font-size: 40px;
+  }
+  .description{
+    font-size: 20px;
   }
 }
 @media (max-width: 330px){
