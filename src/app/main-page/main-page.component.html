@@ -55,21 +55,21 @@
     <div class="step-container">
       <div class="step-box">
         <div class="step">
-          <div class="step-text"><h3>1. Rezerwacja Online</h3></div>
+          <div class="step-text"><h3>1. Rezerwacja online</h3></div>
           <div class="step-icon"><img class="firststepimg" src="assets/main-page-imgs/calendar-checkmark-icon.png"/> </div>
         </div>
         <div class="step step2">
-          <div class="step-text"><h3>Potwierdzenie Rezerwacji w Mgnieniu Oka</h3></div>
+          <div class="step-text"><h3>2. Potwierdzenie rezerwacji w mgnieniu oka</h3></div>
           <div class="step-icon"><img src="assets/main-page-imgs/boy-icon.png"/></div>
         </div>
       </div>
       <div class="step-box">
         <div class="step">
-          <div class="step-text"><h3>3. Bezproblemowa Dostawa na Twoje Życzenie</h3></div>
+          <div class="step-text"><h3>3. Bezproblemowa dostawa na Twoje życzenie</h3></div>
           <div class="step-icon"><h3><img src="assets/main-page-imgs/tutu.png"/></h3></div>
         </div>
         <div class="step arrow-step">
-            <div class="step-text">4. Ciesz się Pełnym Relaksem</div>
+            <div class="step-text">4. Ciesz się pełnym relaksem</div>
         </div>
       </div>
   </div>
@@ -110,7 +110,7 @@
         <div class="form-conteiner">
           <div class="ctf-text">
             <p class="form-title">Zadaj nam pytanie!</p>
-            <p class="description2">Masz pytania? Chętnie na nie odpowiemy! Skorzystaj z formularza na naszej stronie internetowej, aby je zadać. Twoje zapytania pomogą nam ulepszyć sekcję FAQ, odpowiadając na najczęściej pojawiające się kwestie. Czekamy na Twoje pytania!</p>
+            <p class="description2">Masz pytania? Z przyjemnością na nie odpowiemy! Skorzystaj z formularza na naszej stronie internetowej, aby je zadać. Twoje sugestie pomogą nam udoskonalić sekcję FAQ, odpowiadając na najczęściej poruszane tematy. Czekamy na Twoje zapytanie!</p>
             <form [formGroup]="questionForm" (ngSubmit)="onSubmit()" class="ctf-form">
               <div>
                 <label for="full-name">Imię i Nazwisko</label>
@@ -128,14 +128,14 @@
               </div>
               <div>
                 <label for="phone-number">Numer Telefonu</label>
-                <input id="phone-number" type="text" placeholder="123456789" formControlName="phoneNumber" required minlength="9">
+                <input id="phone-number" type="text" placeholder="505-505-505" formControlName="phoneNumber" required minlength="9">
                 <div *ngIf="questionForm.get('phoneNumber')?.invalid && (questionForm.get('phoneNumber')?.dirty || questionForm.get('phoneNumber')?.touched)">
                   <small *ngIf="questionForm.get('phoneNumber')?.errors?.['required']">Numer Telefonu jest wymagany.</small>
                 </div>
               </div>
               <div>
                 <label for="desc">Opis</label>
-                <input id="desc" type="text" placeholder="Twój opis" formControlName="desc" required>
+                <input id="desc" type="text" placeholder="Treść pytania" formControlName="desc" required>
                 <div *ngIf="questionForm.get('desc')?.invalid && (questionForm.get('desc')?.dirty || questionForm.get('desc')?.touched)">
                   <small *ngIf="questionForm.get('desc')?.errors?.['required']">Opis jest wymagany.</small>
                 </div>
@@ -154,7 +154,7 @@
   <div class="footer-container">
     <div class="footer-section about">
       <h2>O nas</h2>
-      <p>Jesteśmy wiodącym dostawcą balii i saun, oferującym najwyższej jakości produkty oraz usługi dla naszych klientów. Naszym celem jest zapewnienie relaksu i komfortu w każdej chwili spędzonej w naszych produktach.</p>
+      <p>Jesteśmy czołowym dostawcą balii i saun, oferującym produkty oraz usługi najwyższej jakości. Naszym priorytetem jest zapewnienie pełnego relaksu i komfortu podczas korzystania z naszego asortymentu.</p>
     </div>
     <div class="footer-section links">
       <h2>Linki</h2>
